@@ -10,44 +10,50 @@
     :root{--navy:#142d3c;--ink:#24333b;--muted:#61717a;--gold:#c5a66a;--paper:#f6f7f5;--white:#fff;--line:#e4e9e8}
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
-    body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 Georgia,"Times New Roman",serif}
-    a{color:#245c70;text-decoration:none}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;font-size:15.5px;line-height:1.72}
+    a{color:#245c70;text-decoration:none;overflow-wrap:anywhere}
     a:hover{text-decoration:underline}
+    p,li{text-align:justify;text-justify:inter-word}
     .topbar{background:var(--navy);color:#fff;padding:16px 24px}
     .nav{max-width:1120px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
-    .brand{color:#fff;font:600 15px/1.3 Arial,sans-serif;letter-spacing:.04em}
+    .brand{color:#fff;font:600 15px/1.3 Arial,Helvetica,sans-serif;letter-spacing:.04em}
     .navlinks{display:flex;gap:20px;flex-wrap:wrap}
-    .navlinks a{color:#e8eeee;font:13px Arial,sans-serif}
+    .navlinks a{color:#e8eeee;font:13px Arial,Helvetica,sans-serif}
     .hero-wrap{background:linear-gradient(135deg,#173648,#254d5c);color:#fff;padding:64px 24px 58px}
     .hero{max-width:1050px;margin:auto;display:grid;grid-template-columns:290px 1fr;gap:54px;align-items:center}
     .portrait{width:260px;height:310px;object-fit:cover;object-position:center 30%;border:4px solid var(--gold);border-radius:8px;display:block;box-shadow:0 12px 30px #07192355;margin:auto}
-    .eyebrow{font:12px Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#e4c98e;margin:0 0 14px}
-    h1{font:normal clamp(34px,5vw,54px)/1.12 Georgia,serif;margin:0 0 14px}
-    .role{font:19px/1.5 Arial,sans-serif;color:#e4ecee;margin:0 0 8px}
-    .affil{font:15px/1.6 Arial,sans-serif;color:#c8d7dc;margin:0 0 22px}
+    .eyebrow{font:12px Arial,Helvetica,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#e4c98e;margin:0 0 14px}
+    h1{font-family:Arial,Helvetica,sans-serif;font-size:clamp(34px,5vw,54px);font-weight:500;line-height:1.12;margin:0 0 14px}
+    .role{font:19px/1.5 Arial,Helvetica,sans-serif;color:#e4ecee;margin:0 0 8px;text-align:left}
+    .affil{font:15px/1.6 Arial,Helvetica,sans-serif;color:#c8d7dc;margin:0 0 22px;text-align:left}
     .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
-    .hero-actions a{display:inline-block;border:1px solid #d7c08d;color:white;padding:9px 15px;border-radius:3px;font:13px Arial,sans-serif}
+    .hero-actions a{display:inline-block;border:1px solid #d7c08d;color:white;padding:9px 15px;border-radius:3px;font:13px Arial,Helvetica,sans-serif}
     .hero-actions a.primary{background:var(--gold);border-color:var(--gold);color:#182d38}
     main{max-width:1000px;margin:0 auto;padding:48px 24px 70px}
     section{padding:0 0 36px;margin:0 0 34px;border-bottom:1px solid var(--line);scroll-margin-top:24px}
-    h2{font:normal 27px Georgia,serif;color:var(--navy);margin:0 0 18px}
-    h3{font:600 17px Arial,sans-serif;color:var(--navy);margin:0 0 5px}
+    h2{font-family:Arial,Helvetica,sans-serif;font-size:26px;font-weight:600;line-height:1.3;color:var(--navy);margin:0 0 18px}
+    h3{font-family:Arial,Helvetica,sans-serif;font-size:19px;font-weight:600;line-height:1.35;color:var(--navy);margin:0 0 8px}
+    h4{font-family:Arial,Helvetica,sans-serif;font-size:17px;font-weight:600;line-height:1.35;color:var(--navy);margin:22px 0 10px}
     p{margin:0 0 14px}
-    .lead{font-size:18px;line-height:1.8}
+    .lead{font-size:17px;line-height:1.8}
     .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
     .item{background:#fff;padding:20px 22px;border:1px solid var(--line);border-radius:5px}
     .item p{color:var(--muted);font-size:14px;margin:5px 0 0}
-    .pubs{padding-left:22px}
-    .pubs li{padding:0 0 15px 5px;margin-bottom:12px;border-bottom:1px solid var(--line)}
+    .pubs{padding-left:22px;margin-top:8px}
+    .pubs li{padding:0 0 16px 5px;margin-bottom:13px;border-bottom:1px solid var(--line);font-size:15px;line-height:1.65}
     .pubs li:last-child{border:0}
-    .meta{font:13px Arial,sans-serif;color:var(--muted)}
+    .pubs strong{font-weight:700}
+    .meta{font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.55;color:var(--muted)}
+    .pub-doi{display:inline-block;margin-top:3px;font-size:13px}
+    .pub-note{font-size:14px;color:var(--muted);margin-bottom:15px}
+    .publication-category{margin-top:28px;padding-top:4px}
     .tags{display:flex;flex-wrap:wrap;gap:9px}
-    .tag{background:#e9efed;color:#294a54;border-radius:20px;padding:6px 12px;font:13px Arial,sans-serif}
+    .tag{background:#e9efed;color:#294a54;border-radius:20px;padding:6px 12px;font:13px Arial,Helvetica,sans-serif}
     .links{display:flex;flex-wrap:wrap;gap:16px}
-    .links a{font:14px Arial,sans-serif}
-    footer{background:var(--navy);color:#d8e1e3;padding:24px;text-align:center;font:13px Arial,sans-serif}
+    .links a{font:14px Arial,Helvetica,sans-serif}
+    footer{background:var(--navy);color:#d8e1e3;padding:24px;text-align:center;font:13px Arial,Helvetica,sans-serif}
     @media(max-width:700px){.hero{grid-template-columns:1fr;gap:30px;text-align:center}.hero-actions,.nav{justify-content:center}.grid{grid-template-columns:1fr}.hero-wrap{padding-top:42px}.portrait{width:220px;height:265px}.navlinks{justify-content:center;gap:12px}}
-  </style>
+</style>
 </head>
 <body>
   <header class="topbar">
@@ -110,60 +116,85 @@
 
     <section id="publications">
       <h2>Publications and research outputs</h2>
-      <p>This selected list is organized by research area. Peer-reviewed journal articles are distinguished from preprints.</p>
+      <p class="pub-note">The neuroscience portfolio is organized by the main research question of each study. Each journal article is listed once; studies that bridge more than one theme are placed according to their primary focus. Preprints, posters, and other research outputs are labelled separately from peer-reviewed articles.</p>
 
-      <h2 id="neuroscience-publications" style="margin-top:30px">Publications: Neuroscience-Related Studies</h2>
-      <h3 style="margin-top:20px">ADHD, cognition, and behavioral neuroscience</h3>
+      <h2 id="neuroscience-publications" class="publication-category">Neuroscience-Related Studies</h2>
+
+      <h3 class="publication-category">ADHD and attention-related research</h3>
       <ol class="pubs">
-        <li><strong>Neurodevelopmental reward dysregulation and addiction risk in ADHD.</strong><br><span class="meta">European Archives of Psychiatry and Clinical Neuroscience (2026; published online September 4, 2026, ahead of print).</span><br><a href="https://doi.org/10.1007/s00406-026-02370-3" target="_blank" rel="noopener">https://doi.org/10.1007/s00406-026-02370-3</a></li>
-        <li><strong>Unraveling Predominantly Inattentive ADHD (ADHD-PI): Insights from Proteomic Analysis of the Striatum of Thyroid Hormone-Responsive Protein (THRSP)-Overexpressing Mice.</strong><br><span class="meta">Molecular Neurobiology, 62(10), 13225–13249 (2025).</span><br><a href="https://doi.org/10.1007/s12035-025-05031-z" target="_blank" rel="noopener">https://doi.org/10.1007/s12035-025-05031-z</a></li>
-        <li><strong>Adult ADHD: it is old and new at the same time – what is it?</strong><br><span class="meta">Reviews in the Neurosciences, 35(2), 225–241 (2024). Review article.</span><br><a href="https://doi.org/10.1515/revneuro-2023-0071" target="_blank" rel="noopener">https://doi.org/10.1515/revneuro-2023-0071</a></li>
-        <li><strong>Hippocampal dentate gyri proteomics reveals Wnt signaling involvement in the behavioral impairment in the THRSP-overexpressing ADHD mouse model.</strong><br><span class="meta">Communications Biology, 6, 55 (2023).</span><br><a href="https://doi.org/10.1038/s42003-022-04387-5" target="_blank" rel="noopener">https://doi.org/10.1038/s42003-022-04387-5</a></li>
-        <li><strong>Thrsp Gene and the ADHD Predominantly Inattentive Presentation.</strong><br><span class="meta">ACS Chemical Neuroscience, 14(4), 573–589 (2023). Review article.</span><br><a href="https://doi.org/10.1021/acschemneuro.2c00710" target="_blank" rel="noopener">https://doi.org/10.1021/acschemneuro.2c00710</a></li>
-        <li><strong>Cognitive functions, neurotransmitter alterations, and hippocampal microstructural changes in mice caused by feeding on Western diet.</strong><br><span class="meta">Cells, 12(18), 2331 (2023).</span><br><a href="https://doi.org/10.3390/cells12182331" target="_blank" rel="noopener">https://doi.org/10.3390/cells12182331</a></li>
-        <li><strong>Per2 Expression Regulates the Spatial Working Memory of Mice through DRD1-PKA-CREB Signaling.</strong><br><span class="meta">Molecular Neurobiology, 59(7), 4292–4303 (2022).</span><br><a href="https://doi.org/10.1007/s12035-022-02845-z" target="_blank" rel="noopener">https://doi.org/10.1007/s12035-022-02845-z</a></li>
-        <li><strong>Low striatal T3 is implicated in inattention and memory impairment in an ADHD mouse model overexpressing thyroid hormone-responsive protein.</strong><br><span class="meta">Communications Biology, 4, 1101 (2021).</span><br><a href="https://doi.org/10.1038/s42003-021-02633-w" target="_blank" rel="noopener">https://doi.org/10.1038/s42003-021-02633-w</a></li>
-        <li><strong>Gene Expression Profiling in the Striatum of Per2 KO Mice Exhibiting More Vulnerable Responses against Methamphetamine.</strong><br><span class="meta">Biomolecules &amp; Therapeutics, 29(2), 135–143 (2021).</span><br><a href="https://doi.org/10.4062/biomolther.2020.123" target="_blank" rel="noopener">https://doi.org/10.4062/biomolther.2020.123</a></li>
-        <li><strong>Exploring the Validity of Proposed Transgenic Animal Models of Attention-Deficit Hyperactivity Disorder (ADHD).</strong><br><span class="meta">Molecular Neurobiology, 55(5), 3739–3754 (2018; published online in 2017). Review article.</span><br><a href="https://doi.org/10.1007/s12035-017-0608-1" target="_blank" rel="noopener">https://doi.org/10.1007/s12035-017-0608-1</a></li>
-        <li><strong>Overexpression of the Thyroid Hormone-Responsive (THRSP) Gene in the Striatum Leads to the Development of Inattentive-like Phenotype in Mice.</strong><br><span class="meta">Neuroscience, 390, 141–150 (2018).</span><br><a href="https://doi.org/10.1016/j.neuroscience.2018.08.008" target="_blank" rel="noopener">https://doi.org/10.1016/j.neuroscience.2018.08.008</a></li>
+        <li><strong>Neurodevelopmental reward dysregulation and addiction risk in ADHD.</strong><br><span class="meta">European Archives of Psychiatry and Clinical Neuroscience (published online September 4, 2026; review article, ahead of issue assignment).</span><br><a class="pub-doi" href="https://doi.org/10.1007/s00406-026-02370-3" target="_blank" rel="noopener">DOI: 10.1007/s00406-026-02370-3</a></li>
+        <li><strong>Unraveling Predominantly Inattentive ADHD (ADHD-PI): Insights from Proteomic Analysis of the Striatum of Thyroid Hormone-Responsive Protein (THRSP)-Overexpressing Mice.</strong><br><span class="meta">Molecular Neurobiology, 62(10), 13225–13249 (2025).</span><br><a class="pub-doi" href="https://doi.org/10.1007/s12035-025-05031-z" target="_blank" rel="noopener">DOI: 10.1007/s12035-025-05031-z</a></li>
+        <li><strong>Adult ADHD: it is old and new at the same time – what is it?</strong><br><span class="meta">Reviews in the Neurosciences, 35(2), 225–241 (2024; published online in 2023). Review article.</span><br><a class="pub-doi" href="https://doi.org/10.1515/revneuro-2023-0071" target="_blank" rel="noopener">DOI: 10.1515/revneuro-2023-0071</a></li>
+        <li><strong>Hippocampal dentate gyri proteomics reveals Wnt signaling involvement in the behavioral impairment in the THRSP-overexpressing ADHD mouse model.</strong><br><span class="meta">Communications Biology, 6, Article 55 (2023).</span><br><a class="pub-doi" href="https://doi.org/10.1038/s42003-022-04387-5" target="_blank" rel="noopener">DOI: 10.1038/s42003-022-04387-5</a></li>
+        <li><strong>Thrsp Gene and the ADHD Predominantly Inattentive Presentation.</strong><br><span class="meta">ACS Chemical Neuroscience, 14(4), 573–589 (2023). Review article.</span><br><a class="pub-doi" href="https://doi.org/10.1021/acschemneuro.2c00710" target="_blank" rel="noopener">DOI: 10.1021/acschemneuro.2c00710</a></li>
+        <li><strong>Low striatal T3 is implicated in inattention and memory impairment in an ADHD mouse model overexpressing thyroid hormone-responsive protein.</strong><br><span class="meta">Communications Biology, 4, Article 1101 (2021).</span><br><a class="pub-doi" href="https://doi.org/10.1038/s42003-021-02633-w" target="_blank" rel="noopener">DOI: 10.1038/s42003-021-02633-w</a></li>
+        <li><strong>The Atxn7-overexpressing mice showed hyperactivity and impulsivity which were ameliorated by atomoxetine treatment: A possible animal model of the hyperactive-impulsive phenotype of ADHD.</strong><br><span class="meta">Progress in Neuro-Psychopharmacology and Biological Psychiatry, 88, 311–319 (2019).</span><br><a class="pub-doi" href="https://doi.org/10.1016/j.pnpbp.2018.08.012" target="_blank" rel="noopener">DOI: 10.1016/j.pnpbp.2018.08.012</a></li>
+        <li><strong>Exploring the Validity of Proposed Transgenic Animal Models of Attention-Deficit Hyperactivity Disorder (ADHD).</strong><br><span class="meta">Molecular Neurobiology, 55(5), 3739–3754 (2018; published online in 2017). Review article.</span><br><a class="pub-doi" href="https://doi.org/10.1007/s12035-017-0608-1" target="_blank" rel="noopener">DOI: 10.1007/s12035-017-0608-1</a></li>
+        <li><strong>Overexpression of the Thyroid Hormone-Responsive (THRSP) Gene in the Striatum Leads to the Development of Inattentive-like Phenotype in Mice.</strong><br><span class="meta">Neuroscience, 390, 141–150 (2018).</span><br><a class="pub-doi" href="https://doi.org/10.1016/j.neuroscience.2018.08.008" target="_blank" rel="noopener">DOI: 10.1016/j.neuroscience.2018.08.008</a></li>
       </ol>
+      <p class="pub-note"><strong>Conference contribution:</strong> “Proteomic analysis reveals new insights into the molecular basis for inattentive ADHD in THRSP-overexpressing mice.” Poster presentation, Neuroscience Applied (2024). This is a conference poster, not a journal article.</p>
 
-      <h3 style="margin-top:28px">Neuropharmacology, addiction, and behavioral pharmacology</h3>
+      <h3 class="publication-category">Addiction, drug abuse liability, and novel psychoactive substances</h3>
       <ol class="pubs">
-        <li><strong>Potential antidepressant properties of aminophylline in male mice exposed to chronic restraint stress.</strong><br><span class="meta">Pharmacological Reports, 78(3), 748–761 (2026).</span><br><a href="https://doi.org/10.1007/s43440-026-00851-9" target="_blank" rel="noopener">https://doi.org/10.1007/s43440-026-00851-9</a></li>
-        <li><strong>Serotonin 2C receptors are also important in head-twitch responses in male mice.</strong><br><span class="meta">Psychopharmacology, 242(7), 1585–1605 (2025; published online in 2023).</span><br><a href="https://doi.org/10.1007/s00213-023-06482-9" target="_blank" rel="noopener">https://doi.org/10.1007/s00213-023-06482-9</a></li>
-        <li><strong>Involvement of adenosine A1 receptor in the sleep-promoting effect of fermented Perilla frutescens.</strong><br><span class="meta">Journal of Functional Foods, 120, 106345 (2024).</span><br><a href="https://doi.org/10.1016/j.jff.2024.106345" target="_blank" rel="noopener">https://doi.org/10.1016/j.jff.2024.106345</a></li>
-        <li><strong>The differential vulnerabilities of Per2 knockout mice to the addictive properties of methamphetamine and cocaine.</strong><br><span class="meta">Progress in Neuro-Psychopharmacology and Biological Psychiatry, 126, 110782 (2023).</span><br><a href="https://doi.org/10.1016/j.pnpbp.2023.110782" target="_blank" rel="noopener">https://doi.org/10.1016/j.pnpbp.2023.110782</a></li>
-        <li><strong>Deletion of Cryab increases the vulnerability of mice to the addiction-like effects of the cannabinoid JWH-018 via upregulation of striatal NF-κB expression.</strong><br><span class="meta">Frontiers in Pharmacology, 14, 1135929 (2023).</span><br><a href="https://doi.org/10.3389/fphar.2023.1135929" target="_blank" rel="noopener">https://doi.org/10.3389/fphar.2023.1135929</a></li>
-        <li><strong>4-F-PCP, a novel PCP analog ameliorates the depressive-like behavior of chronic social defeat stress mice via NMDA receptor antagonism.</strong><br><span class="meta">Biomolecules &amp; Therapeutics, 31(2), 227–239 (2023).</span><br><a href="https://doi.org/10.4062/biomolther.2022.159" target="_blank" rel="noopener">https://doi.org/10.4062/biomolther.2022.159</a></li>
-        <li><strong>Involvement of the adenosine A1 receptor in the hypnotic effect of rosmarinic acid.</strong><br><span class="meta">Biomedicine &amp; Pharmacotherapy, 146, 112483 (2022; published online in 2021).</span><br><a href="https://doi.org/10.1016/j.biopha.2021.112483" target="_blank" rel="noopener">https://doi.org/10.1016/j.biopha.2021.112483</a></li>
-        <li><strong>Regulation of clock and clock-controlled genes during morphine reward and reinforcement: Involvement of the period 2 circadian clock.</strong><br><span class="meta">Journal of Psychopharmacology, 36(7), 875–891 (2022).</span><br><a href="https://doi.org/10.1177/02698811221089040" target="_blank" rel="noopener">https://doi.org/10.1177/02698811221089040</a></li>
-        <li><strong>Differentially Expressed Genes in Period 2-Overexpressing Mice Striatum May Underlie Their Lower Sensitivity to Methamphetamine Addiction-Like Behavior.</strong><br><span class="meta">Biomolecules &amp; Therapeutics, 30(3), 238–245 (2022).</span><br><a href="https://doi.org/10.4062/biomolther.2021.184" target="_blank" rel="noopener">https://doi.org/10.4062/biomolther.2021.184</a></li>
-        <li><strong>R (−)-methoxetamine exerts rapid and sustained antidepressant effects and fewer behavioral side effects relative to S (+)-methoxetamine.</strong><br><span class="meta">Neuropharmacology, 193, 108619 (2021).</span><br><a href="https://doi.org/10.1016/j.neuropharm.2021.108619" target="_blank" rel="noopener">https://doi.org/10.1016/j.neuropharm.2021.108619</a></li>
-        <li><strong>1-Phenylcyclohexan-1-amine hydrochloride (PCA HCl) alters mesolimbic dopamine system accompanied by neuroplastic changes: A neuropsychopharmacological evaluation in rodents.</strong><br><span class="meta">Neurochemistry International, 144, 104962 (2021).</span><br><a href="https://doi.org/10.1016/j.neuint.2021.104962" target="_blank" rel="noopener">https://doi.org/10.1016/j.neuint.2021.104962</a></li>
-        <li><strong>The dopaminergic alterations induced by 4-F-PCP and 4-Keto-PCP may enhance their drug-induced rewarding and reinforcing effects: Implications for abuse.</strong><br><span class="meta">Addiction Biology, 26(4), e12981 (2021; published online in 2020).</span><br><a href="https://doi.org/10.1111/adb.12981" target="_blank" rel="noopener">https://doi.org/10.1111/adb.12981</a></li>
-        <li><strong>The potential rewarding and reinforcing effects of the substituted benzofurans 2-EAPB and 5-EAPB in rodents.</strong><br><span class="meta">European Journal of Pharmacology, 885, 173527 (2020).</span><br><a href="https://doi.org/10.1016/j.ejphar.2020.173527" target="_blank" rel="noopener">https://doi.org/10.1016/j.ejphar.2020.173527</a></li>
-        <li><strong>Two newly-emerging substituted phenethylamines MAL and BOD induce differential psychopharmacological effects in rodents.</strong><br><span class="meta">Journal of Psychopharmacology, 34(9), 1056–1067 (2020).</span><br><a href="https://doi.org/10.1177/0269881120936458" target="_blank" rel="noopener">https://doi.org/10.1177/0269881120936458</a></li>
-        <li><strong>4-MeO-PCP and 3-MeO-PCMo, new dissociative drugs, produce rewarding and reinforcing effects through activation of mesolimbic dopamine pathway and alteration of accumbal CREB, deltaFosB, and BDNF levels.</strong><br><span class="meta">Psychopharmacology, 237(3), 757–772 (2020).</span><br><a href="https://doi.org/10.1007/s00213-019-05412-y" target="_blank" rel="noopener">https://doi.org/10.1007/s00213-019-05412-y</a></li>
-        <li><strong>Four Novel Synthetic Tryptamine Analogs Induce Head-Twitch Responses and Increase 5-HTR2a in the Prefrontal Cortex in Mice.</strong><br><span class="meta">Biomolecules &amp; Therapeutics, 28(1), 83–91 (2020).</span><br><a href="https://doi.org/10.4062/biomolther.2019.049" target="_blank" rel="noopener">https://doi.org/10.4062/biomolther.2019.049</a></li>
-        <li><strong>25B-NBOMe, a novel N-2-methoxybenzyl-phenethylamine (NBOMe) derivative, may induce rewarding and reinforcing effects via a dopaminergic mechanism: Evidence of abuse potential.</strong><br><span class="meta">Addiction Biology, 25(6), e12850 (2020; published online in 2019).</span><br><a href="https://doi.org/10.1111/adb.12850" target="_blank" rel="noopener">https://doi.org/10.1111/adb.12850</a></li>
-        <li><strong>Sleep Promoting Effect of Luteolin in Mice via Adenosine A1 and A2A Receptors.</strong><br><span class="meta">Biomolecules &amp; Therapeutics, 27(6), 584–590 (2019).</span><br><a href="https://doi.org/10.4062/biomolther.2019.149" target="_blank" rel="noopener">https://doi.org/10.4062/biomolther.2019.149</a></li>
-        <li><strong>The novel methoxetamine analogs N-ethylnorketamine hydrochloride (NENK), 2-MeO-N-ethylketamine hydrochloride (2-MeO-NEK), and 4-MeO-N-ethylketamine hydrochloride (4-MeO-NEK) elicit rapid antidepressant effects via activation of AMPA and 5-HT2 receptors.</strong><br><span class="meta">Psychopharmacology, 236(7), 2201–2210 (2019).</span><br><a href="https://doi.org/10.1007/s00213-019-05219-x" target="_blank" rel="noopener">https://doi.org/10.1007/s00213-019-05219-x</a></li>
-        <li><strong>The circadian gene, Per2, influences methamphetamine sensitization and reward through the dopaminergic system in the striatum of mice.</strong><br><span class="meta">Addiction Biology, 24(5), 946–957 (2019; published online in 2018).</span><br><a href="https://doi.org/10.1111/adb.12663" target="_blank" rel="noopener">https://doi.org/10.1111/adb.12663</a></li>
-        <li><strong>A new synthetic drug 5-(2-aminopropyl)indole (5-IT) induces rewarding effects and increases dopamine D1 receptor and dopamine transporter mRNA levels.</strong><br><span class="meta">Behavioural Brain Research, 341, 122–128 (2018; published online in 2017).</span><br><a href="https://doi.org/10.1016/j.bbr.2017.12.026" target="_blank" rel="noopener">https://doi.org/10.1016/j.bbr.2017.12.026</a></li>
+        <li><strong>The differential vulnerabilities of Per2 knockout mice to the addictive properties of methamphetamine and cocaine.</strong><br><span class="meta">Progress in Neuro-Psychopharmacology and Biological Psychiatry, 126, Article 110782 (2023).</span><br><a class="pub-doi" href="https://doi.org/10.1016/j.pnpbp.2023.110782" target="_blank" rel="noopener">DOI: 10.1016/j.pnpbp.2023.110782</a></li>
+        <li><strong>Deletion of Cryab increases the vulnerability of mice to the addiction-like effects of the cannabinoid JWH-018 via upregulation of striatal NF-κB expression.</strong><br><span class="meta">Frontiers in Pharmacology, 14, Article 1135929 (2023).</span><br><a class="pub-doi" href="https://doi.org/10.3389/fphar.2023.1135929" target="_blank" rel="noopener">DOI: 10.3389/fphar.2023.1135929</a></li>
+        <li><strong>Regulation of clock and clock-controlled genes during morphine reward and reinforcement: Involvement of the period 2 circadian clock.</strong><br><span class="meta">Journal of Psychopharmacology, 36(7), 875–891 (2022).</span><br><a class="pub-doi" href="https://doi.org/10.1177/02698811221089040" target="_blank" rel="noopener">DOI: 10.1177/02698811221089040</a></li>
+        <li><strong>Differentially Expressed Genes in Period 2-Overexpressing Mice Striatum May Underlie Their Lower Sensitivity to Methamphetamine Addiction-Like Behavior.</strong><br><span class="meta">Biomolecules &amp; Therapeutics, 30(3), 238–245 (2022).</span><br><a class="pub-doi" href="https://doi.org/10.4062/biomolther.2021.184" target="_blank" rel="noopener">DOI: 10.4062/biomolther.2021.184</a></li>
+        <li><strong>Gene Expression Profiling in the Striatum of Per2 KO Mice Exhibiting More Vulnerable Responses against Methamphetamine.</strong><br><span class="meta">Biomolecules &amp; Therapeutics, 29(2), 135–143 (2021).</span><br><a class="pub-doi" href="https://doi.org/10.4062/biomolther.2020.123" target="_blank" rel="noopener">DOI: 10.4062/biomolther.2020.123</a></li>
+        <li><strong>The dopaminergic alterations induced by 4-F-PCP and 4-Keto-PCP may enhance their drug-induced rewarding and reinforcing effects: Implications for abuse.</strong><br><span class="meta">Addiction Biology, 26(4), Article e12981 (2021; published online in 2020).</span><br><a class="pub-doi" href="https://doi.org/10.1111/adb.12981" target="_blank" rel="noopener">DOI: 10.1111/adb.12981</a></li>
+        <li><strong>1-Phenylcyclohexan-1-amine hydrochloride (PCA HCl) alters mesolimbic dopamine system accompanied by neuroplastic changes: A neuropsychopharmacological evaluation in rodents.</strong><br><span class="meta">Neurochemistry International, 144, Article 104962 (2021).</span><br><a class="pub-doi" href="https://doi.org/10.1016/j.neuint.2021.104962" target="_blank" rel="noopener">DOI: 10.1016/j.neuint.2021.104962</a></li>
+        <li><strong>The potential rewarding and reinforcing effects of the substituted benzofurans 2-EAPB and 5-EAPB in rodents.</strong><br><span class="meta">European Journal of Pharmacology, 885, Article 173527 (2020).</span><br><a class="pub-doi" href="https://doi.org/10.1016/j.ejphar.2020.173527" target="_blank" rel="noopener">DOI: 10.1016/j.ejphar.2020.173527</a></li>
+        <li><strong>Two newly-emerging substituted phenethylamines MAL and BOD induce differential psychopharmacological effects in rodents.</strong><br><span class="meta">Journal of Psychopharmacology, 34(9), 1056–1067 (2020).</span><br><a class="pub-doi" href="https://doi.org/10.1177/0269881120936458" target="_blank" rel="noopener">DOI: 10.1177/0269881120936458</a></li>
+        <li><strong>4-MeO-PCP and 3-MeO-PCMo, new dissociative drugs, produce rewarding and reinforcing effects through activation of mesolimbic dopamine pathway and alteration of accumbal CREB, deltaFosB, and BDNF levels.</strong><br><span class="meta">Psychopharmacology, 237(3), 757–772 (2020; published online in 2019).</span><br><a class="pub-doi" href="https://doi.org/10.1007/s00213-019-05412-y" target="_blank" rel="noopener">DOI: 10.1007/s00213-019-05412-y</a></li>
+        <li><strong>25B-NBOMe, a novel N-2-methoxybenzyl-phenethylamine (NBOMe) derivative, may induce rewarding and reinforcing effects via a dopaminergic mechanism: Evidence of abuse potential.</strong><br><span class="meta">Addiction Biology, 25(6), Article e12850 (2020; published online in 2019).</span><br><a class="pub-doi" href="https://doi.org/10.1111/adb.12850" target="_blank" rel="noopener">DOI: 10.1111/adb.12850</a></li>
+        <li><strong>The circadian gene, Per2, influences methamphetamine sensitization and reward through the dopaminergic system in the striatum of mice.</strong><br><span class="meta">Addiction Biology, 24(5), 946–957 (2019; published online in 2018).</span><br><a class="pub-doi" href="https://doi.org/10.1111/adb.12663" target="_blank" rel="noopener">DOI: 10.1111/adb.12663</a></li>
+        <li><strong>A new synthetic drug 5-(2-aminopropyl)indole (5-IT) induces rewarding effects and increases dopamine D1 receptor and dopamine transporter mRNA levels.</strong><br><span class="meta">Behavioural Brain Research, 341, 122–128 (2018; published online in 2017).</span><br><a class="pub-doi" href="https://doi.org/10.1016/j.bbr.2017.12.026" target="_blank" rel="noopener">DOI: 10.1016/j.bbr.2017.12.026</a></li>
+        <li><strong>Evaluation of the Abuse Potential of Novel Amphetamine Derivatives with Modifications on the Amine (NBNA) and Phenyl (EDA, PMEA, 2-APN) Sites.</strong><br><span class="meta">Biomolecules &amp; Therapeutics, 25(6), 578–585 (2017).</span><br><a class="pub-doi" href="https://doi.org/10.4062/biomolther.2017.141" target="_blank" rel="noopener">DOI: 10.4062/biomolther.2017.141</a></li>
       </ol>
 
-      <h2 id="sti-publications" style="margin-top:34px">Publications: Innovation Systems-Related Studies</h2>
-      <h3 style="margin-top:22px">National STI policy and innovation ecosystems</h3>
+      <h3 class="publication-category">Sleep and sleep-promoting pharmacology</h3>
       <ol class="pubs">
-        <li><strong>From policies to programs: exploring the evolving landscape of science and technology in the Philippines.</strong><br><span class="meta">Journal of Science and Technology Policy Management, 17(2), 277–302 (2026). Journal article.</span><br><a href="https://doi.org/10.1108/JSTPM-06-2024-0222" target="_blank" rel="noopener">https://doi.org/10.1108/JSTPM-06-2024-0222</a></li>
-        <li><strong>Quadruple Helix Framework Evidence Indicates Broader Multisectoral Participation amid Persistent Fragmentation in the Philippine Innovation Ecosystem.</strong><br><span class="meta">Research Square (posted August 28, 2026). Preprint.</span><br><a href="https://doi.org/10.21203/rs.3.rs-10842176/v1" target="_blank" rel="noopener">https://doi.org/10.21203/rs.3.rs-10842176/v1</a></li>
+        <li><strong>Involvement of adenosine A1 receptor in the sleep-promoting effect of fermented Perilla frutescens.</strong><br><span class="meta">Journal of Functional Foods, 120, Article 106345 (2024).</span><br><a class="pub-doi" href="https://doi.org/10.1016/j.jff.2024.106345" target="_blank" rel="noopener">DOI: 10.1016/j.jff.2024.106345</a></li>
+        <li><strong>Involvement of the adenosine A1 receptor in the hypnotic effect of rosmarinic acid.</strong><br><span class="meta">Biomedicine &amp; Pharmacotherapy, 146, Article 112483 (2022; published online in 2021).</span><br><a class="pub-doi" href="https://doi.org/10.1016/j.biopha.2021.112483" target="_blank" rel="noopener">DOI: 10.1016/j.biopha.2021.112483</a></li>
+        <li><strong>Sleep Promoting Effect of Luteolin in Mice via Adenosine A1 and A2A Receptors.</strong><br><span class="meta">Biomolecules &amp; Therapeutics, 27(6), 584–590 (2019).</span><br><a class="pub-doi" href="https://doi.org/10.4062/biomolther.2019.149" target="_blank" rel="noopener">DOI: 10.4062/biomolther.2019.149</a></li>
       </ol>
-      <h3 style="margin-top:24px">Research assessment and scholarly communication</h3>
+
+      <h3 class="publication-category">Depression and antidepressant pharmacology</h3>
       <ol class="pubs">
-        <li><strong>Beyond Scopus Centricity in Philippine Higher Education Through a Multidimensional Research Assessment Framework.</strong><br><span class="meta">Zenodo (September 14, 2026). Preprint / research output.</span><br><a href="https://doi.org/10.5281/zenodo.22754553" target="_blank" rel="noopener">https://doi.org/10.5281/zenodo.22754553</a></li>
+        <li><strong>Potential antidepressant properties of aminophylline in male mice exposed to chronic restraint stress.</strong><br><span class="meta">Pharmacological Reports, 78(3), 748–761 (2026).</span><br><a class="pub-doi" href="https://doi.org/10.1007/s43440-026-00851-9" target="_blank" rel="noopener">DOI: 10.1007/s43440-026-00851-9</a></li>
+        <li><strong>4-F-PCP, a Novel PCP Analog Ameliorates the Depressive-Like Behavior of Chronic Social Defeat Stress Mice via NMDA Receptor Antagonism.</strong><br><span class="meta">Biomolecules &amp; Therapeutics, 31(2), 227–239 (2023).</span><br><a class="pub-doi" href="https://doi.org/10.4062/biomolther.2022.159" target="_blank" rel="noopener">DOI: 10.4062/biomolther.2022.159</a></li>
+        <li><strong>R (−)-methoxetamine exerts rapid and sustained antidepressant effects and fewer behavioral side effects relative to S (+)-methoxetamine.</strong><br><span class="meta">Neuropharmacology, 193, Article 108619 (2021).</span><br><a class="pub-doi" href="https://doi.org/10.1016/j.neuropharm.2021.108619" target="_blank" rel="noopener">DOI: 10.1016/j.neuropharm.2021.108619</a></li>
+        <li><strong>The novel methoxetamine analogs N-ethylnorketamine hydrochloride (NENK), 2-MeO-N-ethylketamine hydrochloride (2-MeO-NEK), and 4-MeO-N-ethylketamine hydrochloride (4-MeO-NEK) elicit rapid antidepressant effects via activation of AMPA and 5-HT2 receptors.</strong><br><span class="meta">Psychopharmacology, 236(7), 2201–2210 (2019).</span><br><a class="pub-doi" href="https://doi.org/10.1007/s00213-019-05219-x" target="_blank" rel="noopener">DOI: 10.1007/s00213-019-05219-x</a></li>
+        <li><strong>Methoxetamine produces rapid and sustained antidepressant effects probably via glutamatergic and serotonergic mechanisms.</strong><br><span class="meta">Neuropharmacology, 126, 121–127 (2017).</span><br><a class="pub-doi" href="https://doi.org/10.1016/j.neuropharm.2017.08.038" target="_blank" rel="noopener">DOI: 10.1016/j.neuropharm.2017.08.038</a></li>
       </ol>
-      <p class="meta">For the complete and most current publication record, visit my <a href="https://scholar.google.co.kr/citations?user=aMU26I0AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a> or <a href="https://www.researchgate.net/profile/Raly-James-Custodio" target="_blank" rel="noopener">ResearchGate</a> profile. Preprints are identified as such and are not presented as peer-reviewed journal articles.</p>
+      <p class="pub-note"><strong>Correction notice:</strong> “Corrigendum to ‘R (−)-methoxetamine exerts rapid and sustained antidepressant effects and fewer behavioral side effects relative to S (+)-methoxetamine’.” Neuropharmacology, 199, Article 108804 (2021). <a href="https://doi.org/10.1016/j.neuropharm.2021.108804" target="_blank" rel="noopener">DOI: 10.1016/j.neuropharm.2021.108804</a>.</p>
+
+      <h3 class="publication-category">Broader neuroscience and neuropharmacology</h3>
+      <ol class="pubs">
+        <li><strong>Cognitive functions, neurotransmitter alterations, and hippocampal microstructural changes in mice caused by feeding on Western diet.</strong><br><span class="meta">Cells, 12(18), Article 2331 (2023).</span><br><a class="pub-doi" href="https://doi.org/10.3390/cells12182331" target="_blank" rel="noopener">DOI: 10.3390/cells12182331</a></li>
+        <li><strong>Serotonin 2C receptors are also important in head-twitch responses in male mice.</strong><br><span class="meta">Psychopharmacology, 242(7), 1585–1605 (2025; published online in 2023).</span><br><a class="pub-doi" href="https://doi.org/10.1007/s00213-023-06482-9" target="_blank" rel="noopener">DOI: 10.1007/s00213-023-06482-9</a></li>
+        <li><strong>Per2 Expression Regulates the Spatial Working Memory of Mice through DRD1-PKA-CREB Signaling.</strong><br><span class="meta">Molecular Neurobiology, 59(7), 4292–4303 (2022).</span><br><a class="pub-doi" href="https://doi.org/10.1007/s12035-022-02845-z" target="_blank" rel="noopener">DOI: 10.1007/s12035-022-02845-z</a></li>
+        <li><strong>Four Novel Synthetic Tryptamine Analogs Induce Head-Twitch Responses and Increase 5-HTR2a in the Prefrontal Cortex in Mice.</strong><br><span class="meta">Biomolecules &amp; Therapeutics, 28(1), 83–91 (2020).</span><br><a class="pub-doi" href="https://doi.org/10.4062/biomolther.2019.049" target="_blank" rel="noopener">DOI: 10.4062/biomolther.2019.049</a></li>
+        <li><strong>Catalpol and Mannitol, Two Components of Rehmannia glutinosa, Exhibit Anticonvulsant Effects Probably via GABA<sub>A</sub> Receptor Regulation.</strong><br><span class="meta">Biomolecules &amp; Therapeutics, 28(2), 137–144 (2020).</span><br><a class="pub-doi" href="https://doi.org/10.4062/biomolther.2019.130" target="_blank" rel="noopener">DOI: 10.4062/biomolther.2019.130</a></li>
+        <li><strong>5-Methoxy-α-methyltryptamine (5-MeO-AMT), a tryptamine derivative, induces head-twitch responses in mice through the activation of serotonin receptor 2a in the prefrontal cortex.</strong><br><span class="meta">Behavioural Brain Research, 359, 828–835 (2019).</span><br><a class="pub-doi" href="https://doi.org/10.1016/j.bbr.2018.07.020" target="_blank" rel="noopener">DOI: 10.1016/j.bbr.2018.07.020</a></li>
+      </ol>
+      <h4>Additional preprint</h4>
+      <ol class="pubs">
+        <li><strong>5-HT2CR Is as Important as 5-HT2AR in Inducing Hallucinogenic Effects in Serotonergic Compounds.</strong><br><span class="meta">SSRN Electronic Journal (2022). Preprint.</span><br><a class="pub-doi" href="https://doi.org/10.2139/ssrn.4121838" target="_blank" rel="noopener">DOI: 10.2139/ssrn.4121838</a></li>
+      </ol>
+
+      <h2 id="sti-publications" class="publication-category">Science, Technology, and Innovation (STI)-Related Studies</h2>
+      <h3 class="publication-category">National STI policy and innovation ecosystems</h3>
+      <ol class="pubs">
+        <li><strong>From policies to programs: exploring the evolving landscape of science and technology in the Philippines.</strong><br><span class="meta">Journal of Science and Technology Policy Management, 17(2), 277–302 (2026). Peer-reviewed journal article.</span><br><a class="pub-doi" href="https://doi.org/10.1108/JSTPM-06-2024-0222" target="_blank" rel="noopener">DOI: 10.1108/JSTPM-06-2024-0222</a></li>
+        <li><strong>Quadruple Helix Framework Evidence Indicates Broader Multisectoral Participation amid Persistent Fragmentation in the Philippine Innovation Ecosystem.</strong><br><span class="meta">Research Square (posted August 28, 2026). Preprint.</span><br><a class="pub-doi" href="https://doi.org/10.21203/rs.3.rs-10842176/v1" target="_blank" rel="noopener">DOI: 10.21203/rs.3.rs-10842176/v1</a></li>
+      </ol>
+      <h3 class="publication-category">Research assessment and scholarly communication</h3>
+      <ol class="pubs">
+        <li><strong>Beyond Scopus Centricity in Philippine Higher Education Through a Multidimensional Research Assessment Framework.</strong><br><span class="meta">Zenodo (2026). Preprint / research output.</span><br><a class="pub-doi" href="https://doi.org/10.5281/zenodo.22754553" target="_blank" rel="noopener">DOI: 10.5281/zenodo.22754553</a></li>
+      </ol>
+      <p class="pub-note">Preprints, posters, and correction notices are identified by type and are not counted as original peer-reviewed journal articles. Preprint versions that duplicate subsequently published articles are not listed as separate studies.</p>
+      <p class="meta">For the complete and most current record, visit my <a href="https://scholar.google.co.kr/citations?user=aMU26I0AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a> or <a href="https://www.researchgate.net/profile/Raly-James-Custodio" target="_blank" rel="noopener">ResearchGate</a> profile.</p>
     </section>
 
     <section id="patents">
