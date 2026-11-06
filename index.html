@@ -71,6 +71,12 @@ h2{font-size:29px;letter-spacing:-.025em;margin-bottom:20px}h3{font-size:18px;le
 .section-kicker{font-size:12px;text-transform:uppercase;letter-spacing:.14em;font-weight:750;color:#8a744a;margin:0 0 8px}
 .project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.project-card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:23px 24px}
 .project-card .project-type{display:inline-block;color:#41616b;background:#edf3f2;border-radius:4px;padding:4px 8px;font-size:11px;font-weight:750;letter-spacing:.06em;text-transform:uppercase;margin-bottom:12px}.project-card p{font-size:14px;color:var(--muted);margin:8px 0 0}
+.featured-figure{margin:18px 0 12px;padding:16px;background:#fff;border:1px solid var(--line);border-radius:8px}
+.featured-figure a{display:block;text-align:center}
+.featured-figure img{display:block;width:100%;max-width:1000px;height:auto;max-height:1100px;object-fit:contain;margin:0 auto}
+.featured-figure figcaption{max-width:1000px;margin:14px auto 0;font-size:13px;line-height:1.65;color:var(--muted);text-align:left}
+.figure-credit{display:block;margin-top:6px;font-size:12px}
+
 .publication-tools{display:flex;gap:12px;flex-wrap:wrap;align-items:center;background:#fff;border:1px solid var(--line);padding:16px;border-radius:9px;margin:20px 0 28px}
 .publication-tools label{font-size:13px;font-weight:700;color:var(--navy)}.publication-tools input,.publication-tools select{font:inherit;font-size:14px;color:var(--ink);background:#fbfcfc;border:1px solid #cbd8d7;border-radius:6px;padding:10px 12px;min-height:42px}
 .publication-tools input{flex:1;min-width:220px}.publication-tools select{min-width:190px}#publication-count{font-size:12px;color:var(--muted);margin-left:auto}
@@ -152,7 +158,19 @@ footer{padding:30px 24px}.footer-links{margin-top:8px}.footer-links a{color:#e2c
 <article class="project-card"><span class="project-type">STI policy · Philippines</span><h3>Philippine national innovation ecosystem</h3><p>Evidence synthesis on multisectoral participation and innovation-system fragmentation using the Quadruple Helix framework, alongside analysis of science, technology, and innovation policy development and implementation.</p></article>
 <article class="project-card"><span class="project-type">Research assessment · Higher education</span><h3>Multidimensional research assessment and scholarly communication</h3><p>Research on responsible and context-sensitive assessment of research performance in Philippine higher education, including the limitations of database-centric evaluation and the role of broader assessment dimensions.</p></article>
 </div></section>
-<section id="publications">
+<section id="featured-figures">
+      <p class="section-kicker">Featured research figure</p>
+      <h2>Developmental Dopamine Trajectory Hypothesis of ADHD</h2>
+      <figure class="featured-figure">
+        <a href="https://www.frontiersin.org/files/Articles/1944446/xml-images/fpsyt-17-1944446-g002.webp" target="_blank" rel="noopener" aria-label="Open the original published Figure 2 at full resolution">
+          <img src="https://www.frontiersin.org/files/Articles/1944446/xml-images/fpsyt-17-1944446-g002.webp" alt="Figure 2. Testable predictions and falsification framework of the Developmental Dopamine Trajectory Hypothesis. The figure presents behavioral, neurobiological, and pharmacological predictions across childhood, adolescence, and adulthood; highlights adolescence as a proposed critical developmental transition; and contrasts findings that would support or challenge the hypothesis." loading="lazy">
+        </a>
+        <figcaption><strong>Figure 2.</strong> Testable predictions and falsification framework of the developmental dopamine trajectory hypothesis. The model predicts developmental changes in ADHD symptom expression, age-dependent biomarker trajectories, and differential treatment responsiveness across the lifespan arising from interactions between DAT-related dopaminergic dysregulation and neural circuit maturation. Adolescence is proposed as a critical neurodevelopmental transition period. <span class="figure-credit">From Custodio et al. (2026), <em>Frontiers in Psychiatry</em>, 17, 1944446. Open-access article distributed under the Creative Commons Attribution (CC BY) license. Underlying illustrations are credited in the article to Servier Medical Art and SciDraw.</span></figcaption>
+      </figure>
+      <p class="pub-note"><a href="https://doi.org/10.3389/fpsyt.2026.1944446" target="_blank" rel="noopener">Read the published article · DOI: 10.3389/fpsyt.2026.1944446</a></p>
+    </section>
+
+    <section id="publications">
       <h2>Publications and research outputs</h2>
       <p class="pub-note">Browse the research record by topic or search titles, journal names, compounds, and DOI identifiers. Publications are grouped by their primary scientific question; a study is not duplicated merely because it intersects with another field. Journal articles, reviews, preprints, posters, and correction notices are identified by publication type.</p><div class="publication-tools" role="search" aria-label="Search publications"><label for="publication-search">Search</label><input id="publication-search" type="search" placeholder="Search title, journal, compound, or DOI…" autocomplete="off"><label for="publication-filter">Research area</label><select id="publication-filter"><option value="all">All research areas</option><option value="adhd">ADHD and attention</option><option value="addiction">Addiction and novel psychoactive substances</option><option value="sleep">Sleep pharmacology</option><option value="depression">Depression pharmacology</option><option value="broader">Broader neuroscience</option><option value="sti">Science, technology, and innovation</option></select><span id="publication-count" aria-live="polite"></span></div>
 
