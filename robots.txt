@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rjampc13.github.io/ralyjamespcustodio.com/sitemap.xml
