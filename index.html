@@ -81,6 +81,14 @@ h2{font-size:29px;letter-spacing:-.025em;margin-bottom:20px}h3{font-size:18px;le
 .featured-figure img{display:block;width:100%;max-width:340px;height:300px;object-fit:contain;margin:0 auto}
 .featured-figure figcaption{margin:12px auto 0;font-size:12px;line-height:1.55;color:var(--muted);text-align:left}
 .patent-details{margin:0 0 18px}
+.patent-details .patent-korean-title{margin:4px 0 10px;color:var(--muted);font-size:14px}
+.patent-details .patent-status{margin:8px 0 20px;font-size:13px;color:var(--muted)}
+.patent-details h4{margin:18px 0 8px;color:var(--navy);font-size:14px;font-weight:700}
+.patent-metadata{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 22px;margin:0;max-width:680px}
+.patent-metadata div{padding:9px 12px;border-left:2px solid var(--line);background:rgba(255,255,255,.45)}
+.patent-metadata dt{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:700}
+.patent-metadata dd{margin:2px 0 0;font-size:14px;font-weight:600;color:var(--ink)}
+@media(max-width:600px){.patent-metadata{grid-template-columns:1fr}}
 .patent-details h3{margin:0 0 8px;color:var(--navy);font-size:19px;line-height:1.4}
 .patent-details p{margin:8px 0;font-size:14px}
 .patent-certificate{margin:18px 0 10px;text-align:center}
@@ -333,12 +341,23 @@ footer{padding:30px 24px}.footer-links{margin-top:8px}.footer-links a{color:#e2c
       <h2>Patents</h2>
       <div class="patent-details">
         <h3>Animal Model for Evaluating Narcotic Drugs and Method for Assessing Narcotic Drug Dependence Using the Same</h3>
-        <p><span class="meta">Korean title: 마약류 평가용 동물모델 및 이를 이용한 마약류 의존성 평가 방법</span></p>
-        <p><strong>Republic of Korea · Registered patent · Co-inventor</strong></p>
-        <p><strong>Patent number:</strong> KR 10-2866379<br><strong>Application number:</strong> 10-2022-0092173<br><strong>Filing date:</strong> July 26, 2022<br><strong>Registration date:</strong> September 25, 2025</p>
-        <p><strong>Inventors:</strong> Kim, H. J.; Lee, H. J.; <strong>Custodio, R. J. P.</strong>; Sayson, L. V.; Ortiz, D. M.; Cheong, J. H.; and Yoon, J.-S. (2025).</p>
-        <p><strong>Invention description.</strong> The present invention relates to an animal model for evaluating narcotic substances in which the <em>Cryab</em> gene is knocked out, and a method for evaluating narcotic substances using the same. The <em>Cryab</em> knockout animal model exhibits increased sensitivity to narcotic substances, particularly cannabis, and can therefore be used as an animal model for evaluating drug dependence.</p>
-        <p><a href="https://app.rndcircle.io/patent/019d48c2-3dde-7303-8e86-ab5e85399f42" target="_blank" rel="noopener">View Korean patent record</a></p>
+        <p class="patent-korean-title"><span class="meta">Original Korean title:</span> 마약류 평가용 동물모델 및 이를 이용한 마약류 의존성 평가 방법</p>
+        <p class="patent-status"><strong>Republic of Korea</strong> <span aria-hidden="true">·</span> Registered patent <span aria-hidden="true">·</span> Co-inventor</p>
+
+        <h4>Patent information</h4>
+        <dl class="patent-metadata">
+          <div><dt>Patent number</dt><dd>KR 10-2866379</dd></div>
+          <div><dt>Application number</dt><dd>10-2022-0092173</dd></div>
+          <div><dt>Filing date</dt><dd>July 26, 2022</dd></div>
+          <div><dt>Registration date</dt><dd>September 25, 2025</dd></div>
+        </dl>
+
+        <h4>Inventors</h4>
+        <p>Kim, H. J.; Lee, H. J.; <strong>Custodio, R. J. P.</strong>; Sayson, L. V.; Ortiz, D. M.; Cheong, J. H.; and Yoon, J.-S.</p>
+
+        <h4>Invention overview</h4>
+        <p>The present invention relates to an animal model for evaluating narcotic substances in which the <em>Cryab</em> gene is knocked out, and a method for evaluating narcotic substances using the same. The <em>Cryab</em> knockout animal model exhibits increased sensitivity to narcotic substances, particularly cannabis, and can therefore be used as an animal model for evaluating drug dependence.</p>
+        <p><a href="https://app.rndcircle.io/patent/019d48c2-3dde-7303-8e86-ab5e85399f42" target="_blank" rel="noopener">View official Korean patent record</a></p>
       </div>
       <article class="item patent-entry">
         <figure class="patent-certificate">
