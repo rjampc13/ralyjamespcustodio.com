@@ -144,7 +144,7 @@ h3{font-size:21px;font-weight:400}
 #about{max-width:900px}
 #about p:not(.section-kicker){font-family:var(--serif);font-size:clamp(19px,2vw,23px);line-height:1.65;color:#35464b}
 .pathways{border:0;padding-bottom:12px}
-.pathway-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.pathway-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
 .pathway{background:#fff;border:1px solid var(--line);padding:25px 26px;min-height:225px;display:flex;flex-direction:column}
 .pathway-no{font-size:9px;letter-spacing:.17em;color:#8c7448;font-weight:750}
 .pathway h3{margin:20px 0 8px;font-size:24px}
@@ -173,7 +173,7 @@ body[data-page=profile] #about,body[data-page=profile] .pathways,body[data-page=
 .page-intro h1{font-size:clamp(36px,4.5vw,54px);color:var(--navy);margin:8px 0 12px}
 .page-intro p{max-width:760px;color:var(--muted);font-size:15px}
 body[data-page=research] #patents{margin-top:0}
-@media(max-width:900px){.nav{flex-wrap:wrap}.menu-toggle{display:block;margin-left:auto}.navlinks{display:none;width:100%;padding:8px 0 15px;justify-content:flex-start}.navlinks.is-open{display:flex}.hero{grid-template-columns:240px 1fr;gap:34px}.portrait{height:300px;width:230px}.pathway-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:900px){.pathway-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.nav{flex-wrap:wrap}.menu-toggle{display:block;margin-left:auto}.navlinks{display:none;width:100%;padding:8px 0 15px;justify-content:flex-start}.navlinks.is-open{display:flex}.hero{grid-template-columns:240px 1fr;gap:34px}.portrait{height:300px;width:230px}.pathway-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:700px){.topbar{position:sticky}.nav{justify-content:space-between;padding:12px 18px}.brand{font-size:10px}.brand-mark{width:34px;height:34px}.navlinks{flex-direction:column;align-items:stretch;gap:0}.navlinks a{padding:11px 3px;border-bottom:1px solid #ffffff20}.hero-wrap{padding:42px 20px}.hero{grid-template-columns:1fr;gap:26px}.portrait{width:205px;height:250px}.hero-summary{text-align:left}.hero-actions{justify-content:flex-start}.focus-strip{justify-content:flex-start}.hero-links{justify-content:flex-start}main{padding:45px 20px 60px}.pathway-grid{grid-template-columns:1fr}.pathway{min-height:190px}.page-intro{padding:34px 20px 0}.featured-figure-grid{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
 
@@ -186,7 +186,7 @@ body[data-page=research] #patents{margin-top:0}
       <a class="brand" href="index.html" aria-label="Raly James Custodio home"><span class="brand-mark">RJ</span><span>RALY JAMES P. CUSTODIO<small>ACADEMIC &amp; RESEARCH PORTFOLIO</small></span></a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-links">Menu <span aria-hidden="true">☰</span></button>
       <div class="navlinks" id="primary-links">
-        <a href="index.html" data-nav="home">Home</a><a href="research.html" data-nav="research">Research</a><a href="publications.html" data-nav="publications">Publications</a><a href="profile.html" data-nav="profile">Academic profile</a><a href="profile.html#editorial">Service</a><a href="index.html#contact">Contact</a>
+        <a href="index.html" data-nav="home">Home</a><a href="research.html" data-nav="research">Research</a><a href="publications.html" data-nav="publications">Publications</a><a href="profile.html" data-nav="profile">Academic profile</a><a href="cv.html" data-nav="cv">CV</a><a href="profile.html#editorial">Service</a><a href="index.html#contact">Contact</a>
       </div>
     </nav>
   </header>
@@ -202,7 +202,7 @@ body[data-page=research] #patents{margin-top:0}
         <p class="role">Behavioral Neuroscience &amp; Neuropharmacology</p>
         <p class="affil">Leibniz Research Centre for Working Environment and Human Factors / <em>Leibniz-Institut für Arbeitsforschung an der Technischen Universität Dortmund (IfADo)</em></p>
         <p class="hero-summary">I investigate the neurobiological and behavioral mechanisms of attention, cognition, addiction vulnerability, and neuropsychiatric-relevant phenotypes. My work integrates preclinical behavioral models, neuropharmacology, molecular neuroscience, and translational research, alongside complementary scholarship in science, technology, and innovation policy.</p><div class="hero-actions">
-          <a class="primary" href="publications.html">Explore publications</a>
+          <a class="primary" href="publications.html">Explore publications</a><a href="cv.html">Curriculum vitae</a>
           <a href="profile.html">Academic profile</a></div><div class="focus-strip" aria-label="Research areas"><span>ADHD &amp; attention</span><span>Neuropharmacology</span><span>Addiction &amp; NPS</span><span>Sleep &amp; depression</span><span>Innovation policy</span></div><div class="hero-links"><a href="https://orcid.org/0000-0002-4318-3375" target="_blank" rel="noopener">ORCID</a><a href="https://scholar.google.co.kr/citations?user=aMU26I0AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a><a href="https://www.linkedin.com/in/raly-james-custodio-26bb362a3" target="_blank" rel="noopener">LinkedIn</a></div>
         </div>
       </div>
@@ -219,7 +219,7 @@ body[data-page=research] #patents{margin-top:0}
 <article class="pathway"><span class="pathway-no">01 / SCIENCE</span><h3>Research &amp; projects</h3><p>Research themes, selected studies, scientific figures, and intellectual contributions.</p><a href="research.html">Explore research <span aria-hidden="true">↗</span></a></article>
 <article class="pathway"><span class="pathway-no">02 / SCHOLARSHIP</span><h3>Publications</h3><p>Peer-reviewed articles, preprints, and research outputs across neuroscience and innovation policy.</p><a href="publications.html">Browse publications <span aria-hidden="true">↗</span></a></article>
 <article class="pathway"><span class="pathway-no">03 / PROFILE</span><h3>Academic profile</h3><p>Education, appointments, mentorship, editorial responsibilities, and professional service.</p><a href="profile.html">View academic profile <span aria-hidden="true">↗</span></a></article>
-</div></section>
+<article class="pathway"><span class="pathway-no">04 / RECORD</span><h3>Curriculum vitae</h3><p>Academic training, appointments, research methods, editorial service, and scholarly record.</p><a href="cv.html">View curriculum vitae <span aria-hidden="true">↗</span></a></article></div></section>
 
     <section id="research">
       <h2>Research</h2>
